@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+form {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    background-color: #F9A84C;
+    border-radius: 70px;
+}
+
+form button {
+    background-color: #800080;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form li a {
+    color: #800080;
+    text-decoration: none;
+    font-size: 16px;
+    font-size: large;
+    padding: 5px 10px;
+}
+
+input {
+    width: 20%;
+    height: 30px;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.cont1 {
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.cont1 p {
+    cursor: pointer;
+}
+
+.cont1 p:hover {
+    color: orange;
+}
+
+.cont2 {
+    width: 100%;
+    /* background-color: purple; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cont2 li {
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+}
+
+.cont2 li a {
+    color: #800080;
+}
+
+.cont2 li a:hover {
+    color: orange;
+}
+
+.cont3 {
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cont3 li a {
+    color: #800080;
+}
+
+.cont3 li a:hover {
+    color: orange;
+}

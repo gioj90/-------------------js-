@@ -1,0 +1,22 @@
+
+
+
+
+@media screen and (max-width:800px){
+    .burger {
+        display: flex !important
+    
+    }
+    .navigation1 ul{
+        display: none;
+    }
+    .basket{
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .selectCont {
+        display: none;
+    }
+}

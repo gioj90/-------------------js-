@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.extramenu {
+    width: 100%;
+    height: 100vh;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background-color: orangered;
+    z-index: 100;
+}
+
+.extramenu ul li {
+    cursor: pointer;
+}
+
+.extramenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.extramenu ul li a:hover {
+    color: #800080;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: #F8A74B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+.navigation1 {
+    width: 100%;
+    height: 300px;
+    background-image: url(./imiges/featured-restaurant-online-ordering.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+}
+
+.navigation1 ul {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.navigation1 ul li a {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    z-index: 101;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    gap: 5px;
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    border-radius: 20px;
+    top: 30px;
+}
+
+nav {
+    display: none;
+}
+
+.line {
+    width: 60px;
+    height: 10px;
+    background-color: purple;
+    border-radius: 20px;
+}
+
+.selectCont {
+    width: 100%;
+    height: 100px;
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 30px;
+}
+
+/* .spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px dotted orange;
+    background-color: blue; 
+    border-top-color: #3498db;
+    border-right-color: aqua;
+    border-bottom-color: lightseagreen;
+    border-left-color: lightgreen;
+    border-radius: 50%;
+    animation: spinner 3s infinite linear;
+} */
+
+
+.menu {
+    width: 70px;
+    height: 50px;
+    border: 5px solid #F9A84C;
+    animation: spinner 3s infinite linear;
+    background-color: antiquewhite;
+    animation: loadmenu 5s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+}
+
+@keyframes spinner {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        /* margin-left: 200px; */
+    }
+
+}
+
+@keyframes loadmenu {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.menu p {
+    font-size: 18px;
+    font-style: italic;
+    color: black;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+
+.selectCont input {
+    width: 20%;
+    background-color: lightblue;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.selectt {
+    background-color: #800080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.selectt select {
+    width: 100%;
+    background-color: lightblue ;
+    font-size: 20px;
+    color: blue;
+    border-radius: 5px;
+}
+
+
+
+.contP{
+    width: 100%;
+    background-color: #F9A84C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.child1 p {
+    font-size: 100px;
+    color: red;
+    padding-left: 50px;
+  
+}
+
+.child2 {
+    font-size: 100px;
+    color: red;
+    padding-right: 50px;
+}
+
+.btn {
+    /* background-color: whitesmoke; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 0px;
+    bottom: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn a {
+    text-decoration: none;
+    font-size: 50px;
+    color: purple;
+}
+
+.btn button {
+    background-color: lightblue;
+    color: purple;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+
+.cont {
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    background-color: #800080;
+    border-radius: 20px;
+    
+}
+
+.box {
+    width: 400px;
+    /* background-color: #800080; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+.box a {
+    color: lightblue;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.box p {
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.card {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.basket {
+    height: 550px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+
+.basket P {
+    color: #800080;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.basket P:hover {
+    color: red;
+}
+
+.basket li  {
+    font-size: 80px;
+    color: #800080;
+
+}
+
+.basket li :hover {
+    color: red;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.cont1 {
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.cont1 p {
+    cursor: pointer;
+}
+
+.cont1 p:hover {
+    color: orange;
+}
+
+.cont2 {
+    width: 100%;
+    /* background-color: purple; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cont2 li {
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+}
+
+.cont2 li a {
+    color: #800080;
+}
+
+.cont2 li a:hover {
+    color: orange;
+}
+
+.cont3 {
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cont3 li a {
+    color: #800080;
+}
+
+.cont3 li a:hover {
+    color: orange;
+}
+
+
+
+
